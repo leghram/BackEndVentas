@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+
+    color: white;
+    height: 5vh;
+}
+
+body{
+    background-color:rgb(29, 21, 25);
+}
+
+.areaPrincipal{
+    border-radius: 20px;
+    margin: auto;
+    width: 90vw;
+    height: 100vh;
+    text-align: center;
+    background-color: rgb(24, 26, 30);
+}
+
+.panelUsuario{
+    display: flex;
+    height: 95vh;
+}
+.menu{
+    border-radius: 40px;
+    background-color: rgb(32, 37, 40);
+    margin: 10px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.registros{
+    border-radius: 40px;
+    margin: 10px;
+    background-color: rgb(32, 37, 40);
+    width: 75%;
+    
+}
+
+.menuOpciones{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.btnMenu{
+    margin:15px;
+    border-color:rgb(29, 21, 25);
+    background-color: rgb(32, 37, 40);
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    height: 50px;
+}
+
+.salir{
+    background-color: rgb(252, 74, 74);
+    text-align: center;
+}
