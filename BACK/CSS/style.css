@@ -27,6 +27,8 @@ body{
     display: flex;
     height: 95vh;
 }
+
+/* AGREGANDO STILOS A LA BARRA DE MENU */
 .menu{
     border-radius: 40px;
     background-color: rgb(32, 37, 40);
@@ -35,14 +37,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content:space-between;
-}
-
-.registros{
-    border-radius: 40px;
-    margin: 10px;
-    background-color: rgb(32, 37, 40);
-    width: 75%;
-    
 }
 
 .menuOpciones{
@@ -67,3 +61,30 @@ body{
     background-color: rgb(252, 74, 74);
     text-align: center;
 }
+
+
+/* AGREGANDO ESTILOS AL CUERPO DE REGISTROS */
+.registros{
+    border-radius: 40px;
+    margin: 10px;
+    
+    width: 75%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.encabezadoRegistros, .titulosRegistros, .listasRegistros{
+    background-color: rgb(32, 37, 40);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    color: rgb(135, 216, 216);
+}
+
+.encabezadoRegistros{
+    justify-content: space-between;
+}
+
+
+
+

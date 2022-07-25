@@ -21,10 +21,26 @@
                 <div class="menuOpciones">
                     <button class="btnMenu salir">SALIR</button>
                 </div>
-                
             </div>
             <div class = "registros">
-                ESTE SON LOS REGISTROS
+                <div class="encabezadoRegistros">
+                    <h2>LISTA DE VER MENUS</h2>
+                    <button>Agregar VER MENUS</button>
+                </div>
+                <div class="titulosRegistros">
+                    <H3>titulo 1</H3>
+                    <H3>titulo 2</H3>
+                    <H3>titulo 3</H3>
+                    <H3>titulo 4</H3>
+                    <H3>ACCIONES</H3>
+                </div>
+                <div class="listasRegistros">
+                    <div class="itemRegistro">
+                        <p> contenido 1</p>
+                        <p> contenido 2</p>
+                        <p> contenido 3</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

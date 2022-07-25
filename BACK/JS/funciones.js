@@ -1,3 +1,13 @@
 let a = 45;
 
-console.log("hol esta funcionando");
+function cambiarColor(){
+    console.log(document.getElementsByClassName("encabezadoRegistro"));
+}
+
+
+cambiarColor();
+
+
+
+
+
