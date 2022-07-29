@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<?php
+include("../VCOMPONENTES/header.php");
+?>
 
-    <title>Document</title>
-    <link href ="./CSS/style.css" rel="stylesheet"> 
-</head>
-<body>
+
+
     <div class="areaPrincipal">
         <h1>INICIO DE BACKEND</h1>
         <div class="panelUsuario">
@@ -46,6 +43,14 @@
     </div>
     
 
-    <script src="./JS/funciones.js"></script>
-</body>
-</html>
+    <!-- <h1 class = "h" id = "a">pruebas fss</h1>
+    <hr>
+    <div class="prueba">
+        <h2 class="mas">
+            mas pruebas
+        </h2>
+    </div> -->
+
+<?php
+include("../VCOMPONENTES/footer.php");
+?>

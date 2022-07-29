@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    border: solid 2px red;
+}
+
+body{
+    background-color: rgb(163, 169, 175);
+}
+
+input{
+    width: 405px;
+    height: 50px;
+    font-size: 22px;
+}
+
+button{
+    width: 250px;
+    height: 40px;
+    font-size: 25px;
+    border: none;
+    color: white;
+    text-align: center;
+    color: white;
+}
