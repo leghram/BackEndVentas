@@ -44,6 +44,8 @@
     background-color: aqua;   
     display: flex;
     justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .nombreLista{
@@ -63,6 +65,8 @@
 .campoRegistros{
     display: flex;
     justify-content: space-between;
+    padding-top: 10px;
+    border-bottom: solid 3px blue;
 }
 
 .datosRegistros{
@@ -70,8 +74,8 @@
     display: flex;
     justify-content: space-around;
     border: solid greenyellow 2px;
-    
 }
+
 
 .acciones{
     width: 20%;
@@ -81,12 +85,14 @@
 .accionesFila{
     width: 20%;
     display: flex;
+    border-left: solid blue 3px;
 }
 
 .btnAcciones{
     color: white;
-    font-size: 12px;
-    height: 30px;
+    font-size: 15px;
+    height: 20px;
+    width: 50%;
 }
 
 .btnAct{
@@ -97,7 +103,10 @@
     background-color: rgb(219, 69, 69);
 }
 
-
+.opcMenu{
+    border: solid yellow 3px;
+    text-align: left;
+}
 
 
 

@@ -8,7 +8,7 @@
         <p>titulo 4</p>
     </div>
     <div class="accionesFila">
-        <button class="btnAcciones btnAct">Actualizar</button>
-        <button class="btnAcciones btnDes">Desactivar</button>
+        <a  class="btnAcciones btnAct" href="../MAIN/index.php">Actualizar</a>
+        <a  class="btnAcciones btnDes" href="../MAIN/index.php">Desactivar</a>
     </div>
 </div>

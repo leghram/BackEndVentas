@@ -2,12 +2,15 @@
 include("../VCOMPONENTES/header.php");
 ?>
         <div class="panelUsuario">
+            <!--action=""  -->
+
+            
             <div class="menu">
                 <?php
                 include("../VCOMPONENTES/opcMenu.php");
                 ?>
                 <div class="menuOpciones">
-                    <button class="btnMenu salir">SALIR</button>
+                    <button class="btnMenu salir"><a href="../MAIN/index.php">SALIR</a></button>
                 </div>
             </div>
 

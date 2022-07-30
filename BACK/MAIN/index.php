@@ -9,7 +9,7 @@ include("../VCOMPONENTES/header.php");
                 <input class="entrada in2" placeholder="password">
             </div>
             <div class="loginButtons">
-                <button class="btnLogin entrar" type="submit">Iniciar Sesion</button>
+                <button class="btnLogin entrar">Iniciar Sesion</button>
                 <input class="btnLogin limpiar" type="button" value="Limpiar" 
                 onClick='
                 const entrada1 = document.querySelector(".in1");
@@ -21,7 +21,7 @@ include("../VCOMPONENTES/header.php");
         </form>
 
     </div>
-// <!-- FOOTER PARA ABAJO -->
+    <!-- FOOTER PARA ABAJO -->
 <?php
 include("../VCOMPONENTES/footer.php");
 ?>

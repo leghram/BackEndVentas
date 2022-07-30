@@ -4,8 +4,8 @@
     box-sizing: border-box;
     border-radius: 10px;
     font-family: 'Courier New', Courier, monospace;
-    border: solid 2px red;
     text-align: center;
+    background-color: aqua;
 }
 
 body{
@@ -29,4 +29,10 @@ button{
     text-align: center;
     display: block;
     margin: 0 auto;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: black;
 }

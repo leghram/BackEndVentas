@@ -1,7 +1,11 @@
 <div class="menuOpciones">
-    <button class="btnMenu">CLIENTES</button>
-    <button class="btnMenu">USUARIOS</button>
-    <button class="btnMenu">PRODUCTOS</button>
-    <button class="btnMenu">CATEGORIAS</button>
-    <button class="btnMenu">PROVEEDORES</button>
+<button class="btnMenu"><a class="opcMenu" href="../MAIN/index.php">CLIENTES</a></button>
+
+    <button class="btnMenu"><a  class="opcMenu" href="../MAIN/index.php">USUARIOS</a></button>
+
+    <button class="btnMenu"><a  class="opcMenu" href="../MAIN/index.php">PRODUCTOS</a></button>
+
+    <button class="btnMenu"><a  class="opcMenu" href="../MAIN/index.php">CATEGORIAS</a></button>
+
+    <button class="btnMenu"><a  class="opcMenu" href="../MAIN/index.php">PROVEEDORES</a></button>
 </div>
