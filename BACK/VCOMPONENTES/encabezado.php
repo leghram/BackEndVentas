@@ -1,8 +1,8 @@
 <div class="encabezado">
-    <div class="h2Agregar">
-        <h2>Lista TABLA</h2>
+    <div>
+        <h2 class = "nombreLista">Lista TABLA</h2>
     </div>
-    <div class="btnAgregar">
-    <button >AGREGAR</button>
+    <div>
+        <button class = "btnAgregar">Agregar</button>
     </div>
 </div>

@@ -13,15 +13,11 @@ include("../VCOMPONENTES/header.php");
 
             <div class = "registros">
                 <?php
-                    include("../VCOMPONENTES/encabezado.php")
+                    include("../VCOMPONENTES/encabezado.php");
+                    include("../VCOMPONENTES/titulosRegistros.php");
+                    include("../VCOMPONENTES/fila.php");
                 ?>
-                <div class="titulosRegistros">
-                    <H3>titulo 1</H3>
-                    <H3>titulo 2</H3>
-                    <H3>titulo 3</H3>
-                    <H3>titulo 4</H3>
-                    <H3>ACCIONES</H3>
-                </div>
+                
                 <div class="listasRegistros">
                     <div class="itemRegistro">
                         <p> contenido 1</p>

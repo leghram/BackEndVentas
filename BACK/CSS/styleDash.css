@@ -1,6 +1,7 @@
 .panelUsuario{
     width: 95%;
     border: solid 3px yellow;
+    margin: auto;
 }
 
 /*AGREGANDO STILOS A LA BARRA DE MENU */
@@ -20,6 +21,7 @@
     margin:15px;
     color: rgb(0, 0, 0);
     text-align: left;
+    margin: 40px auto;
 }
 
 .salir{
@@ -27,6 +29,8 @@
     text-align: center;
 }
 
+
+/* AREA PRINCIPAL DONDE SE VEN LOS REGISTROS */
 .registros{
     width: 70%;
     margin-left: 30%;
@@ -37,29 +41,61 @@
 /* ENCABEZADOS Y RESTRO DEL REGISTRO */
 
 .encabezado{
- background-color: aqua;   
- display: flex;
- flex: content;
- align-items: flex-end;
+    background-color: aqua;   
+    display: flex;
+    justify-content: space-between;
+}
+
+.nombreLista{
+    font-size: 40px;
 }
 
 .btnAgregar{
-    width: 300px;
-    background-color: blue;
-}
-
-.h2Agregar{
-    width: 300px;
-    background-color: yellow;
-
+    background-color: rgb(103, 249, 103);
+    font-size: 40px;
+    height: 50px;
 }
 
 
 
+/* CSS PAA TITULO REGISTROS */
 
+.campoRegistros{
+    display: flex;
+    justify-content: space-between;
+}
 
+.datosRegistros{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    border: solid greenyellow 2px;
+    
+}
 
+.acciones{
+    width: 20%;
+}
 
+/* ESTULOS PARA MODIFICAR */
+.accionesFila{
+    width: 20%;
+    display: flex;
+}
+
+.btnAcciones{
+    color: white;
+    font-size: 12px;
+    height: 30px;
+}
+
+.btnAct{
+    background-color: rgb(108, 216, 79);
+}
+
+.btnDes{
+    background-color: rgb(219, 69, 69);
+}
 
 
 
