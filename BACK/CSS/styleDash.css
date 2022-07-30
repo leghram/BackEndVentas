@@ -1,72 +1,72 @@
-
-h1{
-
-    color: rebeccapurple;
-    height: 5vh;
-}
-
-
-.areaPrincipal{
-    margin: auto;
-    width: 90vw;
-    height: 100vh;
-    text-align: center;
-    border: solid 2px blue;
-    /* background-color: rgb(24, 26, 30); */
-}
-
 .panelUsuario{
-    display: flex;
-    height: 95vh;
+    width: 95%;
+    border: solid 3px yellow;
 }
 
-/* AGREGANDO STILOS A LA BARRA DE MENU */
+/*AGREGANDO STILOS A LA BARRA DE MENU */
 .menu{
     background-color: rgb(51, 63, 80);
-    margin: 10px;
+    position: fixed;
     width: 25%;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
-}
-
-.menuOpciones{
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+    height: 95%;
+    bottom: 2.5%;
+    left: 2.5%;
 }
 
 .btnMenu{
     margin:15px;
-    /* background-color: rgb(32, 37, 40); */
-    color: rgb(129, 32, 189);
+    color: rgb(0, 0, 0);
     text-align: left;
-    height: 50px;
 }
 
 .salir{
     background-color: rgb(252, 74, 74);
+    text-align: center;
 }
 
-
-/* AGREGANDO ESTILOS AL CUERPO DE REGISTROS */
 .registros{
-    
-    width: 75%; 
-    display: flex;
-    flex-direction: column;
+    width: 70%;
+    margin-left: 30%;
 }
 
-.encabezadoRegistros, .titulosRegistros, .listasRegistros{
-    /* background-color: rgb(32, 37, 40); */
-    border-radius: 10px;
-    margin-bottom: 30px;
-    display: flex;
-    color: rgb(135, 216, 216);
+/* PARTE SUPERIOR SE ENCUENTRA EL MENU */
+
+/* ENCABEZADOS Y RESTRO DEL REGISTRO */
+
+.encabezado{
+ background-color: aqua;   
+ display: flex;
+ flex: content;
+ align-items: flex-end;
 }
 
-.encabezadoRegistros{
-    justify-content: space-between;
+.btnAgregar{
+    width: 300px;
+    background-color: blue;
 }
+
+.h2Agregar{
+    width: 300px;
+    background-color: yellow;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

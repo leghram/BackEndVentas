@@ -6,6 +6,7 @@
     margin: auto;
     font-family: 'Courier New', Courier, monospace;
     border: solid 2px red;
+    text-align: center;
 }
 
 body{
@@ -23,7 +24,7 @@ button{
     height: 40px;
     font-size: 25px;
     border: none;
-    color: white;
+    color: black;
     text-align: center;
-    color: white;
+    display: block;
 }

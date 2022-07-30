@@ -1,29 +1,20 @@
 <?php
 include("../VCOMPONENTES/header.php");
 ?>
-
-
-
-    <div class="areaPrincipal">
-        <h1>INICIO DE BACKEND</h1>
         <div class="panelUsuario">
             <div class="menu">
-                <div class="menuOpciones">
-                    <button class="btnMenu">CLIENTES</button>
-                    <button class="btnMenu">USUARIOS</button>
-                    <button class="btnMenu">PRODUCTOS</button>
-                    <button class="btnMenu">CATEGORIAS</button>
-                    <button class="btnMenu">PROVEEDORES</button>
-                </div>
+                <?php
+                include("../VCOMPONENTES/opcMenu.php");
+                ?>
                 <div class="menuOpciones">
                     <button class="btnMenu salir">SALIR</button>
                 </div>
             </div>
+
             <div class = "registros">
-                <div class="encabezadoRegistros">
-                    <h2>LISTA DE VER MENUS</h2>
-                    <button>Agregar VER MENUS</button>
-                </div>
+                <?php
+                    include("../VCOMPONENTES/encabezado.php")
+                ?>
                 <div class="titulosRegistros">
                     <H3>titulo 1</H3>
                     <H3>titulo 2</H3>
@@ -36,11 +27,55 @@ include("../VCOMPONENTES/header.php");
                         <p> contenido 1</p>
                         <p> contenido 2</p>
                         <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+                        <p> contenido 3</p>
+
+                        
+
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     
 
     <!-- <h1 class = "h" id = "a">pruebas fss</h1>
