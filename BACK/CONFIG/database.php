@@ -3,39 +3,39 @@
 include("constantes.php");
 
 
-// class BD{
-    $dirBD = HOST;
-    $nameBD = NAME_BD;
-    $userBD = USER;
-    $passwordBD= PASSWORD;
-
-    $conecction;
-
-//     function __construct(){
-
-//     }
-// }
+class BD{
 
 
+    public $hostDB = HOST; //HOST;
+    private $nameDB = NAME_BD;//NAME_BD;
+    private $userDB = USER;//USER;
+    private $passwordDB = PASSWORD;//PASSWORD;
 
 
-function conectar(){
-    $dirBD = HOST;
-    $nameBD = NAME_BD;
-    $userBD = USER;
-    $passwordBD= PASSWORD;
+    public $coneccion;
+
+    function BD(){
+        $this->CreateConnection();
+    }
+
+    public function CreateConnection(){
+        
+        $this->coneccion=mysqli_connect("localhost","root","","BACKEND");
+        // if(mysqli_connect_error()){
+        //     die("consulta fallida");
+        // }
+    }
+
+    public function LimpiarDato($dato){
+        $datoLimpio = mysqli_real_escape_string($this->coneccion,dato);
+        return datoLimpio;
+    }
 
 
-   $con = mysqli_connect($dirBD,$userBD,"",$nameBD);
-   $consulta = "SELECT * FROM CLIENTES";
 
-   $resultados = mysqli_query($con, $consulta);
-   $fila = mysqli_fetch_row($resultados);
-   echo $fila[0];
+
+
 }
-
-conectar();
-
 
 
 ?>

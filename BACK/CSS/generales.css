@@ -5,7 +5,7 @@
     border-radius: 10px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    background-color: aqua;
+    /* border: red solid 2px; */
 }
 
 body{
@@ -35,4 +35,5 @@ a{
     display: block;
     text-decoration: none;
     color: black;
+    margin:auto 0;
 }

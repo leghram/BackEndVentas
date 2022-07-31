@@ -1,12 +1,17 @@
-<?php
-include("../VCOMPONENTES/header.php");
-// <!--HEADER PARA ARRIBA -->
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../CSS/generales.css" rel="stylesheet">
+    <link href="../CSS/styleLogin.css" rel="stylesheet">
+    <title>SISTEMA DE FACTURACION</title>
+</head>
+<body>
     <div class="login">
-        <form class="loginForm" method="POST" action="../VISTAS/Dashboard.php">
+        <form class="loginForm" method="POST" action="./INCLUDES/validar.php">
             <div class="loginInputs">
-                <input class="entrada in1" placeholder="usuario">
-                <input class="entrada in2" placeholder="password">
+                <input name="nick" class="entrada in1" placeholder="usuario">
+                <input name="pass" class="entrada in2" placeholder="password">
             </div>
             <div class="loginButtons">
                 <button class="btnLogin entrar">Iniciar Sesion</button>
@@ -21,7 +26,8 @@ include("../VCOMPONENTES/header.php");
         </form>
 
     </div>
-    <!-- FOOTER PARA ABAJO -->
-<?php
-include("../VCOMPONENTES/footer.php");
-?>
+<!-- FOOTER PARA ABAJO -->
+
+
+</body>
+</html>
