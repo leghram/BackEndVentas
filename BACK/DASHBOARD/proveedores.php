@@ -54,7 +54,7 @@ include("../VCOMPONENTES/header.php");
                 </div> -->
             </div>
 
-            <div class = "registros RevisarBD">
+            <div class = "registros modal">
                 <?php
                     echo "hola";
     

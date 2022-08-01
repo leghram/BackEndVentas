@@ -68,7 +68,7 @@ class Componente{
             // foreach($fila as $dato){
             //     $registro = $registro . "<p>". $dato ."</p>";
             // }
-            $registro =$registro."</div><div class='accionesFila'><a  class='btnAcciones btnAct' href='../'>Actualizar</a><a  class='btnAcciones btnDes' href='../'>Desactivar</a></div>";
+            $registro =$registro."</div><div class='accionesFila'><a  class='btnAcciones btnAct RevisarActualizar'>Actualizar</a><a  class='btnAcciones btnDes' href='../'>Desactivar</a></div>";
 
             $registros = $registros . $registro . "</div>";
 
