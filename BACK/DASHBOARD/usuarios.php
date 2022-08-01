@@ -49,7 +49,7 @@ include("../VCOMPONENTES/header.php");
                 ?>
             </div>
 
-            <div class = "registros modal">
+            <div class = "registros modalAgregar">
                 <?php
                     echo "hola";
     
@@ -57,7 +57,7 @@ include("../VCOMPONENTES/header.php");
                 ?>
             </div>
 
-            <div class = "registros modal">
+            <div class = "registros modalActualizar">
                 <?php
                     echo "hola";
     

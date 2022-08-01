@@ -52,13 +52,24 @@ include("../VCOMPONENTES/header.php");
                 </div> -->
             </div>
 
-            <div class = "registros modal">
+            <div class = "registros modalAgregar">
                 <?php
                     echo "hola";
     
                     //echo $panel->Registros($resultados);
                 ?>
             </div>
+
+            <div class = "registros modalActualizar">
+                <?php
+                    echo "hola";
+    
+                    //echo $panel->Registros($resultados);
+                ?>
+            </div>
+
+
+
 
 
 

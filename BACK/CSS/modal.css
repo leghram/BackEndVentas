@@ -1,4 +1,4 @@
-.modal{
+.modalAgregar{
     color: red;
     border: solid red 3px;
     position: fixed;
@@ -11,6 +11,24 @@
     visibility: hidden;
 }
 
-.modalClose{
+.modalOpen{
     transform: translateY(0%);
 }
+
+.modalActualizar{
+    color: red;
+    border: solid red 3px;
+    position: fixed;
+    top: 1%;
+    left: 0;
+    height: 98%;
+    background-color: rgba(109, 230, 61, 0.7);
+    /* transition: 1s; */
+    transform:translateY(-150%) ;
+    visibility: hidden;
+}
+
+.modalOpen2{
+    transform: translateY(0%);
+}
+
