@@ -6,10 +6,11 @@
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     /* border: red solid 2px; */
+    font-weight: bold;
 }
 
 body{
-    background-color: rgb(163, 169, 175);
+    background-color: rgb(254, 254, 254);
 }
 
 

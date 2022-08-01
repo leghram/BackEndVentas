@@ -1,5 +1,4 @@
 .modalAgregar{
-    color: red;
     border: solid red 3px;
     position: fixed;
     top: 1%;
@@ -16,7 +15,6 @@
 }
 
 .modalActualizar{
-    color: red;
     border: solid red 3px;
     position: fixed;
     top: 1%;
@@ -30,5 +28,61 @@
 
 .modalOpen2{
     transform: translateY(0%);
+}
+
+/* LA PARTE SUPERRIOR SON ESTLOS PARA DISENAR LOS MODALES */
+
+
+
+/* ESTILO PARA DIV DEL FORMULARIO */
+.modalRegistros{
+    display: flex;
+    margin: 50px auto;
+}
+
+.tituloModal{
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+
+.camposModal{
+    width: 50%;
+    padding-left: 200px;
+}
+
+.nombreCampo{
+    font-size: 30px;
+    margin: 16px;
+    text-align: left;
+}
+
+.datoCampo{
+    display: block;
+    height: 40px;
+    margin: 10px;
+}
+
+
+
+/* STILOS PARA DISENO DEL AREA DE BOTONES */
+.modalBotones{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    border:  solid red 3px;
+}
+
+.btnModal{
+    width: 50%;
+    height: 50px;
+    font-size: 30px;
+    padding: 5px;
+    margin: 10px;
+    border: solid red 4px;
+}
+.btnAgregarModal{
+    background-color: greenyellow;
 }
 

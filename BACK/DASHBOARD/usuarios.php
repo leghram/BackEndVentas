@@ -49,21 +49,37 @@ include("../VCOMPONENTES/header.php");
                 ?>
             </div>
 
-            <div class = "registros modalAgregar">
-                <?php
-                    echo "hola";
-    
-                    //echo $panel->Registros($resultados);
-                ?>
+            <!-- modales -->
+            <div class = "registros modalAgregar modal">
+                <h2 class="tituloModal">Agregar <?php echo $vista?></h2>
+                <div>
+                    <form action="" method="POST" class="formModal">
+                        <div class="modalRegistros">
+                            <?php echo $panel->GenerarFormulario($titulos) ?>
+                        </div>
+                        <div class="modalBotones">
+                            <input type="submit" value="Enviar" class="btnModal btnAgregarModal">
+                            <a class="limpiar btnModal" href="../dashboard/usuarios.php">Salir</a>
+                        </div>
+                    </form>
+                </div>
             </div>
 
-            <div class = "registros modalActualizar">
-                <?php
-                    echo "hola";
-    
-                    //echo $panel->Registros($resultados);
-                ?>
+            <div class = "registros modalActualizar modal">
+                <h2 class="tituloModal">Actualizar Registro <?php echo $vista?></h2>
+                <div>
+                    <form action="" method="POST" class="formModal" name="ActualizaDatos">
+                        <div class="modalRegistros">
+                            <?php echo $panel->GenerarFormulario($titulos) ?>
+                        </div>
+                        <div class="modalBotones">
+                            <input type="submit" value="Enviar" class="btnModal btnAgregarModal">
+                            <a class="limpiar btnModal" href="../dashboard/usuarios.php">Salir</a>
+                        </div>
+                    </form>
+                </div>
             </div>
+            <!-- modales -->
 
         </div>
 

@@ -30,8 +30,10 @@ class Componente{
 
     public function Titulos($listaObjetos){
         $titulos = "";
+
         foreach($listaObjetos as $item){
             $titulos = $titulos . "<h3>". $item->name."</h3>";
+
         }
 
         return <<<html
@@ -55,11 +57,13 @@ class Componente{
         $registros = "<div class='campoRegistros'>";
         $registro = "<div class='datosRegistros'>";
         $linea ="<div class='zonaRegistros'>";
+        $valores ="";
         while(TRUE){
             $fila = mysqli_fetch_row($tabla);
             if($fila){
                 foreach($fila as $elemento){
                     $registro = $registro . "<p>". $elemento."</p>";
+                    $valores = $valores . " " .$elemento;
                 }
             }else{
                 break;
@@ -68,7 +72,8 @@ class Componente{
             // foreach($fila as $dato){
             //     $registro = $registro . "<p>". $dato ."</p>";
             // }
-            $registro =$registro."</div><div class='accionesFila'><a  class='btnAcciones btnAct RevisarActualizar'>Actualizar</a><a  class='btnAcciones btnDes' href='../'>Desactivar</a></div>";
+            $registro =$registro."</div><div class='accionesFila'><a  class='btnAcciones btnAct' data-valores = '".$valores."'>Actualizar</a><a  class='btnAcciones btnDes' href='../'>Eliminar</a></div>";
+            
 
             $registros = $registros . $registro . "</div>";
 
@@ -76,6 +81,7 @@ class Componente{
 
             $registros = "<div class='campoRegistros'>"; 
             $registro = "<div class='datosRegistros'>";
+            $valores ="";
 
         }
         $registros = $registros . "</div>";
@@ -84,34 +90,26 @@ class Componente{
     }
 
 
+    public function GenerarFormulario($listaObjetos){
+        $titulos = "";
+        $inputs="";
+        foreach($listaObjetos as $item){
+            $titulos = $titulos . "<h3 class='nombreCampo'>". $item->name."</h3>";
+            $inputs = $inputs ."<input class='datoCampo' type='text'>";
+        }
+
+        $titulos = "<div class='camposModal'>". $titulos . "</div>";
+        $inputs = "<div class='escribirModal'>" . $inputs . "</div>";
+
+                        
+
+        
+
+        return ($titulos . $inputs);
+    }
+
 
 }
-
-// <H3>titulo 1</H3>
-// <H3>titulo 2</H3>
-// <H3>titulo 3</H3>
-// <H3>titulo 4</H3>
-
-
-// <<<html
-//         <div class="zonaRegistros">
-//             <div class="campoRegistros">
-//                 <div class="datosRegistros">
-//                     <!-- AQUI ES IDEAL PARA UN BUCLE PARA CONSEGUIR LOS TITULOS DE LA TABLA -->
-                    
-//                     <p>titulo 1</p>
-//                     <p>titulo 2</p>
-//                     <p>titulo 3</p>
-//                     <p>titulo 4</p>
-//                 </div>
-//                 <div class="accionesFila">
-//                     <a  class="btnAcciones btnAct" href="../">Actualizar</a>
-//                     <a  class="btnAcciones btnDes" href="../">Desactivar</a>
-//                 </div>
-//             </div>
-//         </div>
-//         $linea
-//         html;
 
 
 
