@@ -57,16 +57,19 @@ class Componente{
         $registros = "<div class='campoRegistros'>";
         $registro = "<div class='datosRegistros'>";
         $linea ="<div class='zonaRegistros'>";
+        $valorID="";
         $orden = 1;
         $valores ="";
         while(TRUE){
             $fila = mysqli_fetch_row($tabla);
             $orden =1;
+            $valorID="";
             if($fila){
                 foreach($fila as $elemento){
                     $registro = $registro . "<p>". $elemento."</p>";
                     if($orden ==1){
                         $valores = $valores . "" .$elemento;
+                        $valorID = $elemento;
                         $orden++;
                     }else{
                         $valores = $valores . "-" .$elemento;
@@ -81,7 +84,7 @@ class Componente{
             // foreach($fila as $dato){
             //     $registro = $registro . "<p>". $dato ."</p>";
             // }
-            $registro =$registro."</div><div class='accionesFila'><a  class='btnAcciones btnAct' data-valores = '".$valores."'>Actualizar</a><a  class='btnAcciones btnDes' href='../'>Eliminar</a></div>";
+            $registro =$registro."</div><div class='accionesFila'><a  class='btnAcciones btnAct' data-valores = '".$valores."'>Actualizar</a><a  class='btnAcciones btnDes' href='../INCLUDES/eliminar.php?ID=".$valorID."'>Eliminar</a></div>";
             
 
             $registros = $registros . $registro . "</div>";
