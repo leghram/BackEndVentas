@@ -1,10 +1,10 @@
 .modalAgregar{
-    border: solid red 3px;
+    /* border: solid red 3px; */
     position: fixed;
     top: 1%;
     left: 0;
     height: 98%;
-    background-color: rgba(217, 217, 30, 0.7);
+    background-color: rgba(104, 63, 157, 0.96);
     /* transition: 1s; */
     transform:translateY(-150%) ;
     visibility: hidden;
@@ -15,12 +15,12 @@
 }
 
 .modalActualizar{
-    border: solid red 3px;
+    /* border: solid red 3px; */
     position: fixed;
     top: 1%;
     left: 0;
     height: 98%;
-    background-color: rgba(109, 230, 61, 0.7);
+    background-color: rgba(104, 63, 157, 0.96);
     /* transition: 1s; */
     transform:translateY(-150%) ;
     visibility: hidden;
@@ -71,7 +71,7 @@
     display: flex;
     width: 50%;
     margin: auto;
-    border:  solid red 3px;
+    /* border:  solid red 3px; */
 }
 
 .btnModal{
@@ -80,7 +80,7 @@
     font-size: 30px;
     padding: 5px;
     margin: 10px;
-    border: solid red 4px;
+    /* border: solid red 4px; */
 }
 .btnAgregarModal{
     background-color: greenyellow;
