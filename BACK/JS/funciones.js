@@ -58,6 +58,14 @@ for(let i = 0 ; i <botonesActualizar.length ; i++){
 
 
 
+const btnEnviarActualizar = document.querySelector(".btnActualizarModal");
+
+const activarID = document.getElementsByName("ID")[1];
+
+btnEnviarActualizar.addEventListener("click", ()=>{
+    activarID.disabled= false;    
+});
+
 
 
 

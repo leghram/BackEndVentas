@@ -64,12 +64,12 @@ include("../VCOMPONENTES/header.php");
             <div class = "registros modalActualizar modal">
                 <h2 class="tituloModal">Actualizar Registro <?php echo $vista?></h2>
                 <div>
-                    <form action="" method="POST" class="formModal" name="ActualizaDatos">
+                    <form action="../includes/actualizar.php" method="POST" class="formModal" name="ActualizaDatos">
                         <div class="modalRegistros">
                             <?php echo $panel->GenerarFormulario($titulos) ?>
                         </div>
                         <div class="modalBotones">
-                            <input type="submit" value="Enviar" class="btnModal btnAgregarModal">
+                            <input type="submit" value="Enviar" class="btnModal btnAgregarModal btnActualizarModal">
                             <a class="limpiar btnModal" href="../dashboard/proveedores.php">Salir</a>
                         </div>
                     </form>
