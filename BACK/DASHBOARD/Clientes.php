@@ -48,7 +48,7 @@ include("../VCOMPONENTES/header.php");
             <div class = "registros modalAgregar modal">
                 <h2 class="tituloModal">Agregar <?php echo $vista?></h2>
                 <div>
-                    <form action="" method="POST" class="formModal">
+                    <form action="../includes/insertar.php"  method="POST" class="formModal">
                         <div class="modalRegistros">
                             <?php echo $panel->GenerarFormulario($titulos) ?>
                         </div>

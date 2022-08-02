@@ -57,13 +57,22 @@ class Componente{
         $registros = "<div class='campoRegistros'>";
         $registro = "<div class='datosRegistros'>";
         $linea ="<div class='zonaRegistros'>";
+        $orden = 1;
         $valores ="";
         while(TRUE){
             $fila = mysqli_fetch_row($tabla);
+            $orden =1;
             if($fila){
                 foreach($fila as $elemento){
                     $registro = $registro . "<p>". $elemento."</p>";
-                    $valores = $valores . " " .$elemento;
+                    if($orden ==1){
+                        $valores = $valores . "" .$elemento;
+                        $orden++;
+                    }else{
+                        $valores = $valores . "-" .$elemento;
+                        $orden++;
+                    }
+                    
                 }
             }else{
                 break;
@@ -95,7 +104,7 @@ class Componente{
         $inputs="";
         foreach($listaObjetos as $item){
             $titulos = $titulos . "<h3 class='nombreCampo'>". $item->name."</h3>";
-            $inputs = $inputs ."<input class='datoCampo' type='text'>";
+            $inputs = $inputs ."<input class='datoCampo' type='text' name = '".$item->name."'>";
         }
 
         $titulos = "<div class='camposModal'>". $titulos . "</div>";

@@ -20,19 +20,27 @@ for(let i = 0 ; i <botonesActualizar.length ; i++){
     botonesActualizar[i].addEventListener("click",(ev)=>{
         ev.preventDefault();
         const masValores = botonesActualizar[i].getAttribute("data-valores");
-        const listaValores = masValores.trim().split(" ");
+        const listaValores = masValores.trim().split("-");
 
         
         const posicion = document.querySelectorAll(".datoCampo");
 
         let valorInicial = 0;
         posicion.forEach(element => {
+
             if(valorInicial>=posicion.length/2){
                 element.value = listaValores[valorInicial-posicion.length/2];
             }else{
                 element.value = valorInicial;
             }
+
+            if(valorInicial==posicion.length/2){
+                element.disabled = true;
+            }
+
             valorInicial++;
+            
+
         });
 
         
