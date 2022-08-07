@@ -1,3 +1,4 @@
+<?php ob_start();?>
 <?php
 include("../CONFIG/database.php");
 $baseDatos = new BD();
@@ -29,6 +30,7 @@ echo $nombreTabla;
 if(mysqli_query($baseDatos->coneccion, $consulta)){
     header("Location: ../DASHBOARD/".$nombreTabla.".php");
 }else{
+    header("Location: ../DASHBOARD/".$nombreTabla.".php");
     echo "no se pudo eliminar";
 }
 
@@ -36,8 +38,4 @@ if(mysqli_query($baseDatos->coneccion, $consulta)){
 
 // mysqli_query($baseDatos->coneccion, $consulta)
 ?>
-
-
-
-
-
+<?php ob_end_flush(); ?>

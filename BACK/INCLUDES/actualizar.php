@@ -1,3 +1,4 @@
+<?php ob_start();?>
 <?php
 include("../CONFIG/database.php");
 
@@ -15,10 +16,6 @@ $dato4="";
 $dato5="";
 $dato6="";
 $dato7="";
-
-
-
-
 
 if(strpos($_SERVER["HTTP_REFERER"],"usuarios")){
     $nombreTabla="usuarios";
@@ -181,7 +178,4 @@ echo $consulta;
 
 
 ?>
-
-
-
-
+<?php ob_end_flush(); ?>

@@ -1,4 +1,10 @@
+<?php ob_start();?>
 <?php
+session_start();
+
+if(!isset($_SESSION["usuario"])){
+    header("Location: ../");
+}
 include("../CONFIG/database.php");
 include("../VCOMPONENTES/componentes.php");
 $vista = "Categorias";
@@ -83,7 +89,7 @@ include("../VCOMPONENTES/header.php");
 <?php
 include("../VCOMPONENTES/footer.php");
 ?>
-
+<?php ob_end_flush(); ?>
 
 
 

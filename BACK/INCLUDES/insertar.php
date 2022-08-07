@@ -1,3 +1,4 @@
+<?php ob_start();?>
 <?php
 include("../CONFIG/database.php");
 
@@ -181,7 +182,7 @@ echo $consulta;
 
 
 ?>
-
+<?php ob_end_flush(); ?>
 
 
 

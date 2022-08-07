@@ -11,7 +11,7 @@
         <form class="loginForm" method="POST" action="./INCLUDES/validar.php">
             <div class="loginInputs">
                 <input name="nick" class="entrada in1" placeholder="usuario">
-                <input name="pass" class="entrada in2" placeholder="password">
+                <input name="pass" class="entrada in2" placeholder="password" type ="password">
             </div>
             <div class="loginButtons">
                 <button class="btnLogin entrar">Iniciar Sesion</button>
